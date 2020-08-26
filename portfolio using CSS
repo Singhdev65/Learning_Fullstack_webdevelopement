@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <table>
+      <td><img src="https://media-exp1.licdn.com/dms/image/C5103AQHt36zZIvqKyg/profile-displayphoto-shrink_200_200/0?e=1599696000&v=beta&t=rLQnepvLHAhNZLm2n3ke-AtQlGUg3yw6xPZXu4OaQAE" class="picture"></td>
+      <td><div class="introduction">
+        <h1>Prince Kumar</h1>
+        <p1>Technical IT recruiter</p1>
+        <br><p1>Freelance Web Developer</p1>
+      </div></td>
+     </table>
+      <div class="work">
+      </hr>
+      <ul>
+     <h1>Work experince</h1>
+     <table>
+       <thead>
+         <tr>
+           <th>work</th>
+           <th>date</th>
+         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Enterprise solutions Inc.</td>
+          <td>present</td>
+          </tr>
+        <tr>
+        <td>Headfield Pvt. Ltd</td>
+        <td>2019</td>
+      </tr>
+      </tbody>
+         </table>
+         <hr>
+         <h1>Skills</h1>
+         <table>
+           <tr>
+           <td><li>HTML</li></td>
+           <td>*****</td>
+           </tr>
+            <tr>
+              <td><li>CSS</li></td>
+              <td>****</td>
+            </tr>
+            <tr>
+              <td><li>BOOTSTRAP</li></td>
+              <td>***</td>
+            </tr>
+            <tr>
+              <td><li>JAVASCRIPT</li></td>
+              <td>***</td>
+            </tr>
+            <tr>
+              <td><li>PYTHON</li></td>
+              <td>****</td>
+            </tr>
+            <tr>
+              <td><li>AZURE</li></td>
+              <td>***</td>
+            </tr>
+         </table>
+        <hr>
+        <h1>Hobbies</h1>
+           <li>READING NOVEL</li>
+           <li>DRIVING</li>
+           <li>WATCHING MOVIES</li>
+           <li>PLAYING GAME</li>
+        <hr>
+        <h4>Contact-me</h4>
+          <a href="https://www.linkedin.com/in/prince-singh-l-i-o-n-a87327189/" >LinkdIn</a>
+          <br>
+          <a href="https://www.facebook.com/profile.php?id=100034145964117">Facebook</a>
+  </body>
+</html>
