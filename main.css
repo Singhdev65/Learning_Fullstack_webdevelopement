@@ -1,115 +1,205 @@
 body{
-  margin: 0;
-  padding: 0;
-  background: url('bg.jpg') no-repeat;
-  color: white;
-  background-size: cover;
-  font-style: 'calibri',sans-serif;
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
 }
 
-.left{
-  display: block;
-  position: absolute;
-  top: 20px;
-  left:34px;
-  font-size: 25px;
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
-.red{
-  color:red;
+ul{
+  margin:0;
+  padding:0;
 }
 
-.mid{
-  display: block;
-  width:50%;
-  margin:20px auto;
-  padding-top: 20px;
+.button_1{
+  height:38px;
+  background:#e8491d;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
 }
 
-.navbar{
-  display: inline-block;
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 
-.navbar li{
-  display: inline-block;
-  width: 100px;
+/* Header **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('showcase.jpg') no-repeat 0 -400px;
+  text-align:center;
+  color:#ffffff;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:90px;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#e8491d;
   text-align: center;
 }
 
-.navbar li a{
-  text-decoration: none;
-  color: white;
-  padding: 34px 23px;
-}
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
 
-.navbar li a:hover{
-  color: red;
-  border-radius: 5px;
-}
+  header{
+    padding-bottom:20px;
+  }
 
-.right{
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  right:34px;
-}
+  #showcase h1{
+    margin-top:40px;
+  }
 
-.right button{
-  background-color: orange;
-  border-radius: 7px;
-  color: white;
-  border: 2px solid white;
-  width: 130px;
-  height: 45px;
-  margin-top: 20px;
-  transition: transform 1s ease-in-out;
-}
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
 
-.right button:hover{
-  background-color: chocolate;
-  transform: rotate(360deg);
-}
-
-.banner{
-width: 100%;
-height: 100vh;
-position: absolute;
-top:33%;
-left:22%;
-}
-
-.banner h3{
-  font-size: 40px;
-  opacity: 0.6;
-  color: white;
-}
-
-.banner h2{
-  font-size: 60px;
-  font-weight: bolder;
-}
-
-.banner span{
-  color:white;
-  font-size: 50px;
-  font-weight: bold;
-  opacity: 0.8;
-  position: absolute;
-  top:4.1%;
-  left:14%;
-}
-
-.banner button{
-  width: 190px;
-  height: 50px;
-  border-radius: 7px;
-  border: 2px solid chocolate;
-  font-weight: bold;
-  background-color: orange;
-  color: white;
-  transition: transform 0.6s ease-in-out;
-}
-
-.banner button:hover{
-  transform: translate(36%,0);
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
 }
